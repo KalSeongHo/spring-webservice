@@ -5,6 +5,9 @@ buildscript {
 	
 	dependencies {
 		classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.21.RELEASE'
+
+		// 추가
+		classpath "io.spring.gradle:dependency-management-plugin:1.0.4.RELEASE"
 	}
 }
 
@@ -21,6 +24,14 @@ sourceCompatibility = '1.8'
 repositories {
 	mavenCentral()
 }
+
+//Spring Boot Overriding
+// 추가
+// Spring Data Jpa가 사용하는 Hibernate 의 버전만 5.2.11 로 변경해서 사용하겠다 라는
+// 의존성 변경 코드
+// 하는이유? LocalDate와 LocalDateTime 이 db 저장시 제대로 전환이 안되는 이슈가 있어서,
+// 강제로 교체해야함..
+ext['hibernate.version'] = '5.2.11.Final'
 
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-actuator'

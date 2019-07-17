@@ -1,5 +1,6 @@
 package com.kalsh.webservice.domain.posts;
 
+import com.kalsh.webservice.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,7 +22,7 @@ import javax.persistence.Id;
 @Getter // 클래스내 모든 필드의 Getter 메소드 자동 생성
 @Entity // 테이블과 링크될 클래스임을 나타냄.
 
-public class Posts {
+public class Posts extends BaseTimeEntity {
     /* 실제 DB의 테이블과 매칭될 클래스 = Entity 클래스
      * JPA 를 사용하면, DB데이터에 어떤 작업을 할 경우,
      * 실제 쿼리를 날리기보다는 이 Entity 클래스의 수정을 통해 작업함.
