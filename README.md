@@ -10,13 +10,12 @@ springboot &amp; gradle 웹 서비스 개발해보기
   -Gradle
 
   -Dependencies
-     (1) Lombok
-	 (2) Web
-	 (3) SQL - JPA, H2
-	 (4) OPS - Actuators
+  - Lombok
+  - Web
+  - SQL - JPA, H2
+  - OPS - Actuators
 
   -Project name : "spring-webservice"
-  
 ---
 
 1.2019-07-15(월) : SpringBoot & Gradle 프로젝트 생성
