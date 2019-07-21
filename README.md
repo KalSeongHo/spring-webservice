@@ -20,7 +20,8 @@ springboot &amp; gradle 웹 서비스 개발해보기
 
 ##
 1.2019-07-15(월) : SpringBoot & Gradle 프로젝트 생성
-1.2019-07-17(수) : JPA 로 간단한 API 생성
+2.2019-07-17(수) : JPA 로 간단한 API 생성
+3.2019-07-21(일) : Handlebars 연동 및 게시글 등록
 
 --- 
 ## 참조 링크
